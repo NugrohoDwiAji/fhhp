@@ -217,7 +217,7 @@ export default function Dashboard({ data, rawResults }: VisitData) {
         ClassName={`mb-5 text-white hover:bg-white ${
           canEdit
             ? "hover:text-red-600 hover:border-2 hover:border-red-600 bg-red-600"
-            : " hover:text-cyan-400 hover:border-2 hover:border-cyan-400 bg-cyan-400"
+            : " hover:text-green-400 hover:border-2 hover:border-green-400 bg-green-400"
         }`}
         onClick={() => setcanEdit(!canEdit)}
       >

@@ -52,7 +52,7 @@ export default function SideBar() {
     <div className="w-64 h-full bg-white p-5 fixed  z-50">
       <div className="flex items-center  gap-2 mb-3">
         <img src="/img/ubg-blue.png" alt="" className="h-14"/>
-        <h1 className="text-2xl font-bold text-cyan-400">Admin</h1>
+        <h1 className="text-2xl font-bold text-red-700">Admin</h1>
       </div>
       <h2 className="py-2 text-gray-400">Menu</h2>
       <div className="flex flex-col gap-2 h-full w-full">
@@ -64,8 +64,8 @@ export default function SideBar() {
             text={item.name}
             className={
               currentPath === item.url
-                ? "bg-cyan-400/50 text-white text-shadow-lg/10"
-                : "bg-gray-300/70 text-cyan-400 text-shadow-lg/10"
+                ? "bg-red-700 text-white text-shadow-lg/10"
+                : "bg-gray-300/70 text-rd-700 text-shadow-lg/10"
             }
           />
         ))}

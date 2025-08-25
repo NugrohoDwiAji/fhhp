@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <div className="">
       {/* Banner */}
-      <div className="bg-[url(/img/banner-feb.png)] h-[18rem] md:h-[31rem] lg:h-[40rem] bg-cover md:bg-center bg-right">
+      <div className="bg-[url(/img/banner-fhhp.png)] h-[18rem] md:h-[31rem] lg:h-[40rem] bg-cover md:bg-center bg-right">
         <div className="h-full w-full flex px-5 md:px-12 lg:px-20 items-center md:justify-between ">
           <div className="w-[50%] flex flex-col gap-2 -mt-9 md:-mt-20 lg:-mt-36">
             <h1 className=" font-bold text-white text-shadow-lg/30 md:text-2xl lg:text-4xl uppercase">
@@ -134,7 +134,7 @@ export default function Home() {
             </p>
             
             <a
-              className="mt-2 md:mt-5 border-2 bg-white text-cyan-400 px-4 py-2 md:px-6  rounded-lg hover:scale-105 hover:shadow-2xl shadow-lg ease-in-out duration-300 transition-all text-sm md:text-xl w-fit hover:cursor-pointer "
+              className="mt-2 md:mt-5 border-2 bg-white text-red-700 px-4 py-2 md:px-6  rounded-lg hover:scale-105 hover:shadow-2xl shadow-lg ease-in-out duration-300 transition-all text-sm md:text-xl w-fit hover:cursor-pointer "
               href="https://pmb.universitasbumigora.ac.id/v.2019/daftar"
             >
               Daftar Sekarang
@@ -146,10 +146,10 @@ export default function Home() {
 
       {/* Tentang Fakultas */}
       <div className="flex flex-col items-center p-5 gap-5 lg:h-[40rem]">
-        <h1 className="text-xl lg:text-2xl font-bold lg:mt-10  text-cyan-400">
+        <h1 className="text-xl lg:text-2xl font-bold lg:mt-10  text-red-700">
           Tentang Fakultas
         </h1>
-        <div className="bg-cyan-400 w-[50%] md:w-[25%] lg:w-[14%] h-[2px] lg:mb-5 " ></div>
+        <div className="bg-red-700 w-[50%] md:w-[25%] lg:w-[14%] h-[2px] lg:mb-5 " ></div>
         <div className="md:flex gap-32 justify-center lg:px-14 md:h-[28rem] pb-10 ">
           <div className="h-full flex items-start justify-center w-[40%] ">
             <img
@@ -171,7 +171,7 @@ export default function Home() {
               )}
             </p>
             <ButtonPrimary
-              ClassName="bg-cyan-400 text-white hover:text-cyan-400 hover:bg-white hover:border-2 hover:border-cyan-400 font-semibold ease-in-out duration-300 transition-all"
+              ClassName="bg-red-700 text-white hover:text-red-700 hover:bg-white hover:border-2 hover:border-red-700 font-semibold ease-in-out duration-300 transition-all"
               onClick={() => router.push("/informasi")}
             >
               Selengkapnya
@@ -182,7 +182,7 @@ export default function Home() {
 
       {/* Information */}
       <div className="h-fit bg-[url(/img/bg-kampus.jpg)] bg-center bg-cover">
-        <div className="bg-gradient-to-r from-blue-400 to-cyan-400  h-full text-white font-bold flex justify-center items-center gap-6 md:gap-20 lg:gap-36 py-3 md:py-12 px-4 flex-wrap md:flex-row  ">
+        <div className="bg-gradient-to-r from-red-300 to-red-700  h-full text-white font-bold flex justify-center items-center gap-6 md:gap-20 lg:gap-36 py-3 md:py-12 px-4 flex-wrap md:flex-row  ">
           <div className="flex gap-2 items-center md:gap-4">
             <h1 className="text-2xl md:text-5xl lg:text-6xl ">
               <AnimatedNumber
@@ -228,10 +228,10 @@ export default function Home() {
 
       {/* Berita */}
       <div className="flex flex-col items-center py-5 lg:py-10 bg-white gap-5 h-fit">
-        <h1 className="text-xl lg:text-2xl font-bold text-cyan-400">
+        <h1 className="text-xl lg:text-2xl font-bold text-red-700">
           Berita
         </h1>
-        <hr className="border-t-[3px] border-cyan-400 w-[20%] md:w-[15%] lg:w-[6%]  mb-5" />
+        <hr className="border-t-[3px] border-red-700 w-[20%] md:w-[15%] lg:w-[6%]  mb-5" />
         <div className="w-full">
           <Carausel>
             {dataBerita.map((item, index) => (
@@ -249,7 +249,7 @@ export default function Home() {
           </Carausel>
           <div className="mt-10 w-full flex justify-center">
             <ButtonPrimary
-              ClassName="bg-cyan-400 text-white hover:text-cyan-400 hover:bg-white hover:border-2 hover:border-cyan-400 font-semibold ease-in-out duration-300 transition-all"
+              ClassName="bg-red-700 text-white hover:text-red-700 hover:bg-white hover:border-2 hover:border-red-700 font-semibold ease-in-out duration-300 transition-all"
               onClick={() => router.push("/berita")}
             >
               Selengkapnya
@@ -260,7 +260,7 @@ export default function Home() {
 
       {/* Pengumuman */}
       <div className="h-fit bg-[url(/img/bg-kampus.jpg)] bg-center bg-cover">
-        <div className="bg-gradient-to-r from-blue-400 to-cyan-400  h-full flex justify-center items-center gap-6 md:gap-20 lg:gap-36 py-3 md:py-12 px-4 flex-wrap md:flex-row  ">
+        <div className="bg-gradient-to-r from-red-400 to-red-700  h-full flex justify-center items-center gap-6 md:gap-20 lg:gap-36 py-3 md:py-12 px-4 flex-wrap md:flex-row  ">
           <div className="flex flex-col items-center">
             <h1 className="text-xl lg:text-2xl font-bold text-white">
               Pengumuman
@@ -279,7 +279,7 @@ export default function Home() {
               </Carausel>
                <div className="mt-10 w-full flex justify-center">
             <ButtonPrimary
-              ClassName="hover:bg-cyan-400 m-auto hover:text-white text-cyan-400 bg-white border-2 border-cyan-400 font-semibold ease-in-out duration-300 transition-all"
+              ClassName="hover:bg-red-700 m-auto hover:text-white text-red-700 bg-white border-2 border-red-700 font-semibold ease-in-out duration-300 transition-all"
               onClick={() => router.push("/pengumuman")}
             >
               Selengkapnya
@@ -292,7 +292,7 @@ export default function Home() {
 
       {/* FaQ */}
       <div className="flex flex-col items-center py-5 lg:py-10 bg-white  h-fit">
-        <h1 className="text-xl lg:text-2xl font-bold text-cyan-400">FAQ</h1>
+        <h1 className="text-xl lg:text-2xl font-bold text-red-700">FAQ</h1>
         <div className="flex gap-5 md:gap-2 flex-wrap justify-center mt-10">
           {dataFaq.slice(0, 4).map((item, index) => (
             <CardFaq
@@ -304,7 +304,7 @@ export default function Home() {
         </div>
 
         <ButtonPrimary
-          ClassName="bg-cyan-400 text-white hover:text-cyan-400 hover:bg-white hover:border-2 hover:border-cyan-400 font-semibold ease-in-out duration-300 transition-all"
+          ClassName="bg-red-700 text-white hover:text-red-700 hover:bg-white hover:border-2 hover:border-red-700 font-semibold ease-in-out duration-300 transition-all"
           onClick={() => router.push("/faq")}
         >
           Lihat Semua
@@ -319,14 +319,14 @@ export default function Home() {
           alt="eror"
           className=" h-24 md:h-36"
         />
-        <div className="h-32 w-[2px] bg-cyan-400 mx-2"></div>
+        <div className="h-32 w-[2px] bg-red-700 mx-2"></div>
         <img
           data-aos="zoom-in-left"
           src="/img/banpt.png"
           alt="eror"
           className="h-20 md:h-32"
         />
-        <div className="h-32 w-[2px] bg-cyan-400 mx-2"></div>
+        <div className="h-32 w-[2px] bg-red-700 mx-2"></div>
         <img
           data-aos="zoom-in-down"
           src="/img/laminfokom.png"

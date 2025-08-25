@@ -44,7 +44,7 @@ const [identitas, setIdentitas] = useState<IdentitasType[] | null>([])
     <div className="min-h-screen">
       <div className="relative h-80 md:h-96 lg:h-[43rem]">
         <img
-          src="/img/banner-feb.png"
+          src="/img/banner-fhhp.png"
           alt=""
           className="w-full bg-cover h-full"
         />
@@ -57,7 +57,7 @@ const [identitas, setIdentitas] = useState<IdentitasType[] | null>([])
           </h2>
         </div>
       </div>
-      <div className="text-cyan-400 text-shadow-lg/20 text-center mt-10 ">
+      <div className="text-red-700 text-shadow-lg/20 text-center mt-10 ">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
           Informasi
         </h1>

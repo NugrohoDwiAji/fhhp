@@ -39,12 +39,12 @@ const handleLogin = async() => {
 
   const isDesktop = useIsDesktop();
   return isDesktop ? (
-    <div className="h-screen w-screen bg-radial-[at_50%_25%] from-blue-700 to-cyan-400 to-75% flex justify-center items-center">
+    <div className="h-screen w-screen bg-radial-[at_50%_25%] from-red-900 to-red-700 to-75% flex justify-center items-center">
       
       <AuthLayout title="Login">
         <form action="" className="flex flex-col gap-3 mt-7 ">
-          <div className="flex items-center bg-gray-300 rounded-lg px-3 border-2 border-cyan-400">
-            <label htmlFor="email" className="text-cyan-400">
+          <div className="flex items-center bg-gray-300 rounded-lg px-3 border-2 border-red-700">
+            <label htmlFor="email" className="text-red-700">
               <User />
             </label>
             <input
@@ -56,8 +56,8 @@ const handleLogin = async() => {
               onChange={(e) => setKredensial({...kredensil, username: e.target.value})}
             />
           </div>
-          <div className="flex items-center bg-gray-300 rounded-lg px-3  border-2 border-cyan-400">
-            <label htmlFor="password" className="text-cyan-400">
+          <div className="flex items-center bg-gray-300 rounded-lg px-3  border-2 border-red-700">
+            <label htmlFor="password" className="text-red-700">
               <Lock />
             </label>
             <input
@@ -72,7 +72,7 @@ const handleLogin = async() => {
         </form>
         {isLogin && <h1 className="text-red-600 text-sm flex gap-1 items-center"><CircleAlert />Credensial Salah</h1>}
           <ButtonPrimary
-            ClassName="w-full bg-cyan-400 py-3 text-white mt-10"
+            ClassName="w-full bg-red-700 py-3 text-white mt-10"
             onClick={() => handleLogin()}
           >
             Login

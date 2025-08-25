@@ -15,7 +15,7 @@ export default function Header() {
   return (
     <div className="fixed right-0 top-0 left-0 flex justify-end items-center p-5 bg-white">
       <div className="flex items-center">
-        <span className="mr-2 text-cyan-400 text-shadow-lg/10">Admin</span>
+        <span className="mr-2 text-red-700 text-shadow-lg/10">Admin</span>
         <ButtonPrimary
           onClick={handleLogout}
           ClassName="bg-red-500 text-white p-2 rounded"

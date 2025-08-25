@@ -136,7 +136,7 @@ export default function Header({ isScroll }: Props) {
   return (
     <nav
       className={`h-16 md:h-20 flex items-center justify-between fixed  left-0 w-full text-shadow-lg  z-50 ${
-        isScroll ? "shadow-lg bg-white text-cyan-400 top-0 " : "top-14 text-white "
+        isScroll ? "shadow-lg bg-red-700 text-white top-0 " : "top-14 text-white "
       } transition-all duration-500 ease-in-out py-5 px-5 md:px-7 lg:px-20`}
     >
       <div className="flex items-center gap-3 ">
@@ -146,7 +146,7 @@ export default function Header({ isScroll }: Props) {
             {" "}
             {identitas?.find((item) => item.name === "Nama Fakultas")?.value}
           </h1>
-          <hr className={isScroll ?"text-cyan-500":"text-white"} />
+          <hr className={isScroll ?"text-white":"text-white"} />
           <h1>Universitas Bumigora</h1>
         </div>
       </div>
@@ -162,11 +162,11 @@ export default function Header({ isScroll }: Props) {
             <Link
               href={item.url}
               className={classnames({
-                "underline font-bold text-blue-700":
+                "underline font-bold text-white":
                   currentPath === item.url ||
                   item.subMenu?.some((path) => path.url === currentPath),
-                "border-none text-cyan-400" : currentPath !== item.url && isScroll === true,
-                " hover:text-blue-700 t hover:underline hover:text-shadow-lg/20 hover:font-bold hover:shadow-lg ease-in-out duration-300 transition-all ":
+                "border-none text-white" : currentPath !== item.url && isScroll === true,
+                " hover:text-white hover:underline hover:text-shadow-lg/20 hover:font-bold hover:shadow-lg ease-in-out duration-300 transition-all ":
                   true,
               })}
               onClick={item.action}
@@ -175,7 +175,7 @@ export default function Header({ isScroll }: Props) {
             </Link>
             {subActive === item.name && (
               <div
-                className={`flex flex-col gap-3 absolute mt-2 bg-gradient-to-r from-blue-400 to-cyan-400  rounded-lg ${
+                className={`flex flex-col gap-3 absolute mt-2 bg-gradient-to-r from-red-700 to-red-700  rounded-lg ${
                   item.subMenu?.length === 0 ? "" : "px-4 py-2"
                 }`}
               >
@@ -198,12 +198,12 @@ export default function Header({ isScroll }: Props) {
       <div
         className={` ${
           isActive ? "flex absolute z-50" : "hidden"
-        } md:hidden top-0 text-white right-0 flex-col bg-blue-950 gap-3 px-5 py-4 rounded-bl-xl w-60`}
+        } md:hidden top-0 text-white right-0 flex-col bg-red-700 gap-3 px-5 py-4 rounded-bl-xl w-60`}
       ></div>{" "}
       <div
         className={` ${
           isActive ? "flex absolute z-50" : "hidden"
-        } top-0 text-white right-0 flex-col bg-gradient-to-r from-purple-600 to-violet-600 gap-3 px-5 py-4 rounded-bl-xl w-60`}
+        } top-0 text-white right-0 flex-col bg-gradient-to-r from-red-400 to-red-700 gap-3 px-5 py-4 rounded-bl-xl w-60`}
       >
         <button onClick={() => setIsActive(!isActive)}>
           <ArrowRightFromLine />

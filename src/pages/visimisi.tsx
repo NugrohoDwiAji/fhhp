@@ -51,7 +51,7 @@ export default function Visimisi() {
       {/* jumbotron */}
       <div className="relative h-80 md:h-96 lg:h-[43rem] ">
         <img
-          src="/img/banner-feb.png"
+          src="/img/banner-fhhp.png"
           alt=""
           className="w-full bg-cover h-full"
         />
@@ -66,7 +66,7 @@ export default function Visimisi() {
           </h2>
         </div>
       </div>
-      <div className="text-cyan-400 text-shadow-lg/20 text-center mt-10 ">
+      <div className="text-red-700 text-shadow-lg/20 text-center mt-10 ">
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold">
           Visi dan Misi
         </h1>
@@ -75,7 +75,7 @@ export default function Visimisi() {
       {/* main */}
       <main className="px-5 text-justify my-10 md:my-12 md:max-w-xl lg:max-w-4xl m-auto ">
         <div>
-          <h1 className="font-bold text-xl md:text-2xl mb-2 text-cyan-400 text-shadow-lg">
+          <h1 className="font-bold text-xl md:text-2xl mb-2 text-red-700 text-shadow-lg">
             Visi
           </h1>
           <p className="text-lg">
@@ -83,7 +83,7 @@ export default function Visimisi() {
           </p>
         </div>
         <div>
-          <h1 className="font-bold mt-10 text-xl md:text-2xl mb-2 text-cyan-400 text-shadow-lg whitespace-pre-line">
+          <h1 className="font-bold mt-10 text-xl md:text-2xl mb-2 text-red-700 text-shadow-lg whitespace-pre-line">
             Misi
           </h1>
           <ul className="space-y-2 text-lg text-justify list-decimal ml-5 ">
