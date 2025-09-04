@@ -228,7 +228,7 @@ export default function Header({ isScroll }: Props) {
 
               {subActive === item.name && (
                 <div
-                  className={`flex flex-col gap-3 mt-2 bg-gradient-to-r from-blue-400 to-cyan-400  rounded-lg ${
+                  className={`flex flex-col gap-3 mt-2 bg-gradient-to-r from-red-400 to-red-700  rounded-lg ${
                     item.subMenu?.length === 0 ? "" : "px-4 py-2"
                   }`}
                 >

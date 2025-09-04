@@ -30,23 +30,23 @@ export default function Berita() {
 
   return (
     <div className="min-h-screen">
-      <div className="relative h-80 md:h-96 lg:h-[28rem]">
+      <div className="relative h-60 md:h-96 lg:h-[43rem]">
         <img
-          src="/img/banner-pasca.png"
+          src="/img/banner-fhhp.png"
           alt=""
           className="w-full bg-cover h-full"
         />
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-blue-950/50 flex flex-col justify-center p-10 ">
+        <div className="absolute top-16 lg:top-36 left-0 right-0 flex flex-col justify-center p-5 md:p-10 ">
           <h1 className="text-white text-3xl md:text-4xl lg:text-6xl font-bold">
             Berita
           </h1>
-          <h2 className="text-white mt-3">Berita Fakultas Pascasarjana</h2>
+          <h2 className="text-white md:mt-3">Berita Fakultas Humaniora, Hukum dan Pariwisata</h2>
         </div>
       </div>
 
       {/* Main */}
       <main>
-        <h1 className="font-bold text-xl md:text-2xl my-5 text-center ">
+        <h1 className="font-bold text-xl md:text-3xl my-5 text-center text-red-700 text-shadow-lg/20">
           Berita
         </h1>
 
